@@ -20,12 +20,13 @@ COPY policies /var/www/app-sec/
 WORKDIR /var/www/app-sec/
 RUN curl -LO https://github.com/f5devcentral/f5-waf-audit/archive/master.zip && \
 	unzip master.zip && \
-	rm master.zip
+	mv f5-waf-audit-master/* . && \
+	rm -rf f5-waf-audit-master master.zip
 
 # apache2
 COPY /etc/app-sec.conf /etc/apache2/sites-available/
 COPY /etc/apache2.conf /etc/apache2/apache2.conf.append
-COPY /etc/self* /etc/apache2/ssl/
+COPY /etc/ssl /etc/apache2/ssl/
 COPY /scripts/start.sh /usr/local/bin/
 RUN cat /etc/apache2/apache2.conf.append | tee -a /etc/apache2/apache2.conf
 RUN a2dissite 000-default.conf
