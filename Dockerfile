@@ -1,7 +1,7 @@
 # f5-app-sec - Dockerfile
 # https://github.com/ArtiomL/f5-app-sec
 # Artiom Lichtenstein
-# v1.0.1, 10/09/2018
+# v1.0.1, 12/09/2018
 
 FROM debian:stable-slim
 
@@ -16,7 +16,7 @@ RUN apt-get update && \
 	rm -rf /var/lib/apt/lists/*
 
 # f5-app-sec
-COPY policies /var/www/app-sec/
+COPY /artifacts /var/www/app-sec/
 WORKDIR /var/www/app-sec/
 RUN curl -LO https://github.com/f5devcentral/f5-waf-audit/archive/master.zip && \
 	unzip master.zip && \
