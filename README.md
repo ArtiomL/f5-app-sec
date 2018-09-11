@@ -1,6 +1,6 @@
 # <img align="center" src="img/awaf.svg" height="80">&nbsp;&nbsp;f5-app-sec
 [![Releases](https://img.shields.io/github/release/ArtiomL/f5-app-sec.svg)](https://github.com/ArtiomL/f5-app-sec/releases)
-[![Commits](https://img.shields.io/github/commits-since/ArtiomL/f5-app-sec/v1.0.0.svg?label=commits%20since)](https://github.com/ArtiomL/f5-app-sec/commits/master)
+[![Commits](https://img.shields.io/github/commits-since/ArtiomL/f5-app-sec/v0.0.1.svg?label=commits%20since)](https://github.com/ArtiomL/f5-app-sec/commits/master)
 [![Maintenance](https://img.shields.io/maintenance/yes/2018.svg)](https://github.com/ArtiomL/f5-app-sec/graphs/code-frequency)
 [![Issues](https://img.shields.io/github/issues/ArtiomL/f5-app-sec.svg)](https://github.com/ArtiomL/f5-app-sec/issues)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
