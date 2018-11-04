@@ -1,0 +1,231 @@
+.black {
+  color: #000;
+
+}
+.controls{
+padding-top:0px !important
+padding-bottom:0px !important
+}
+
+.controls>.btn{
+margin:0px !important
+}
+
+.margin15px {
+margin-bottom: 15px;
+}
+.margin5px {
+margin-bottom: 5px;
+}
+.margin_top {
+margin-top: 7px;
+}
+.right_col {
+font-size: 13px;
+}
+.selected{
+background-color:#ccc
+}
+.mytable {
+    cursor: pointer;
+}
+table{
+  margin: 0 auto;
+  width: 100%;
+  clear: both;
+  border-collapse: collapse;
+ 
+}
+.table {
+  table-layout: fixed; 
+  word-break:break-all;
+}
+td.details-control {
+    background: url('images/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('images/details_close.png') no-repeat center center;
+}
+
+td.violation_rating.rate5 {
+    background: url('images/rating-5.png') no-repeat center center;
+}
+td.violation_rating.rate4 {
+    background: url('images/rating-4.png') no-repeat center center;
+}
+td.violation_rating.rate3 {
+    background: url('images/rating-3.png') no-repeat center center;
+}
+td.violation_rating.rate2 {
+    background: url('images/rating-2.png') no-repeat center center;
+}
+td.violation_rating.rate1 {
+    background: url('images/rating-1.png') no-repeat center center;
+}
+td.violation_rating.rate0 {
+    background: url('images/rating-0.png') no-repeat center center;
+	
+}
+
+
+td.violation_rating1.rate5 {
+    background: url('images/rating-5.png') no-repeat left center;
+    background-position-x: 20px;	
+	cursor:pointer;
+}
+td.violation_rating1.rate4 {
+    background: url('images/rating-4.png') no-repeat left center;
+    background-position-x: 20px;	
+	cursor:pointer;
+}
+td.violation_rating1.rate3 {
+    background: url('images/rating-3.png') no-repeat left center;
+    background-position-x: 20px;	
+	cursor:pointer;
+}
+td.violation_rating1.rate2 {
+    background: url('images/rating-2.png') no-repeat left center;
+    background-position-x: 20px;	
+	cursor:pointer;
+}
+td.violation_rating1.rate1 {
+    background: url('images/rating-1.png') no-repeat left center;
+    background-position-x: 20px;	
+	cursor:pointer;
+}
+td.violation_rating1.rate0 {
+    background: url('images/rating-0.png') no-repeat left center;
+    background-position-x: 20px;	
+	cursor:pointer;
+}
+
+	
+	
+
+td.request_status.blocked {
+    background: url('images/blocked.png') no-repeat center center;
+}
+td.request_status.alerted {
+    background: url('images/alerted.png') no-repeat center center;
+}
+td.request_status.passed {
+    background: url('images/pass.png') no-repeat center center;
+}
+
+td.blocked_per, td.attacks, td.geo, td.response_code, td.severity , td.elk_id, td.attackers, td.ips, td.controls {
+    text-align: center;
+}
+
+td.geo {
+padding-left:5px;
+}
+
+td.bold {
+/*	font-weight:bold; */
+}
+
+td.filter {
+	text-align:center;
+}
+.selected:hover{
+background-color:#ccc;
+}
+
+.orange {
+    color: #d6c304;
+}
+
+td.delete_button{
+	cursor:pointer;
+	text-align:center;
+}
+
+.color-switcher {
+    position: fixed !important;
+    width: 220px;
+    right: -220px;
+    top: 80px;
+    background: #fff;
+    padding: 15px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    border: 2px solid #E6E6E6;
+    border-radius: 0 0 3px;
+    z-index: 1039;
+}
+
+.color-switcher .color-switcher-toggle {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 20px;
+    background: #fff;
+    border-radius: 0 3px 3px 0;
+    border: 2px solid #E6E6E6;
+    position: absolute;
+    top: -2px;
+    left: -40px;
+    color: rgba(27, 27, 27, .8);
+}
+
+.color-switcher.show {
+    right: 0;
+}
+
+
+/*
+td.bold,td.violation_rating{
+	font-weight:bold;
+    background: url('images/filter.png') no-repeat left center;  
+    background-size: 14px;
+    background-position: 5px;
+}
+
+table.table-bordered tbody td.bold {
+	padding-left:25px;
+	cursor:pointer;
+}*/
+
+/* 'click', '.bold', function */
+table.table-bordered tbody td.violation_rating {
+	padding-left:25px;
+	cursor:pointer;
+}
+
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+vertical-align: middle;
+}
+
+#logtitle{
+	text-align:right;
+	font-weight:400;
+}
+#logresult{
+	text-align:left;
+	font-weight:bold;
+}
+
+
+td.title {
+	padding: 5px 3px 5px 7px;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #c4c2be;
+    background: #deddd9;
+	width:150px;
+}
+td.results {
+padding: 5px;
+    border-right: 1px solid #999999;
+    border-bottom: 1px solid #dddddd;
+    background: #f7f6f5;
+	word-wrap: break-word;
+	}
+	
+.modal-content {
+	background-color: #F7F7F7;
+}	
