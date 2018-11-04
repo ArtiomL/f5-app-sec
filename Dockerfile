@@ -12,6 +12,7 @@ RUN apt-get update && \
 	apt-get install -y apache2 curl php7.0 php7.0-cli php7.0-xml php7.0-zip && \
 	apt-get install -y python3 python3-pip && \
 	pip3 install python-docx requests xlsxwriter && \
+	apt-get remove -y python3-dev python3-pip && \
 	apt-get autoclean -y && \
 	apt-get autoremove -y && \
 	apt-get clean -y && \
