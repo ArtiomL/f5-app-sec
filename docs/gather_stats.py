@@ -5,12 +5,16 @@ import requests
 from requests.auth import HTTPDigestAuth
 import json
 import getpass
+import sys
 
 requests.packages.urllib3.disable_warnings() 
 
 
 bigip = input('Please enter the management address of the standby BIG-IP: ')
-customer_name = input('Please enter Customer name: ')
+if len(sys.argv) > 1:
+	customer_name = sys.argv[1]
+else:
+	customer_name = input('Please enter Customer name: ')
 username = input('Please enter BIG-IP username: ')
 password = getpass.getpass(prompt='Please enter BIG-IP password:')
 ltm_stats = input('Collect LTM stats (Yes/No): ')
@@ -365,4 +369,4 @@ if len(asm_policies)> 0 and (asm_stats !="no" and asm_stats !="No" and asm_stats
 			#with open(customer_name+"/"+asm_policy['name']+"/"+"suggestions.txt", "w") as outfile:
 			#	json.dump(suggestions, outfile)
 			with open(customer_name+"/"+asm_policy['name']+"/"+"results.txt", "w") as outfile:
-				json.dump(results, outfile)				
+				json.dump(results, outfile)
