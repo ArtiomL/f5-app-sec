@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd /home/user/
+gather_stats.py BIG-Stats
+cd BIG-Stats
+zip -r ../BIG-Stats.zip .
