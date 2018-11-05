@@ -4,3 +4,5 @@ cd /home/user/
 gather_stats.py BIG-Stats
 cd BIG-Stats
 zip -r ../BIG-Stats.zip .
+cd ..
+rm -rf BIG-Stats
