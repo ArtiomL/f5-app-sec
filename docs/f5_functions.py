@@ -2012,7 +2012,7 @@ def get_policy_builder (my_bigip, my_id, my_user, my_pass):
 	if(myResponse.ok):
 		jData = json.loads(myResponse.content.decode('utf-8'))
 		learningMode = jData['learningMode']
-		print(jData)
+
 		if jData['enableFullPolicyInspection']:
 			enableFullPolicyInspection = "Yes"
 			if jData['learnInactiveEntities']:
