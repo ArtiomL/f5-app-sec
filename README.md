@@ -12,6 +12,7 @@
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
+	- [Stats](#stats)
 	- [Run](#run)
 - [License](LICENSE)
 
@@ -31,12 +32,19 @@ https://support.f5.com/csp/article/K07359270
 
 ## Installation
 
-### Gather BIG-IP configuration / stats
+### Stats
+To gather the configuration and stats from an F5 BIG-IP (which you have management access to), run:
+
 ```shell
 docker run -it --rm -v /path/to/local/folder:/home/user/ artioml/f5-app-sec gather_stats
 ```
 
-### Run the actual Audit app
+This will create a file named BIG-Stats.zip in the local directory you mounted into the container (`/path/to/local/folder`).
+
+
+### Run
+To start the actual web app, run:
+
 ```shell
 docker run -dit --rm -p 443:8443 artioml/f5-app-sec
 ```
