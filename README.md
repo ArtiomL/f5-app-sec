@@ -11,6 +11,29 @@
 
 ## Table of Contents
 - [Description](#description)
+- [Installation](#installation)
+	- [Run](#run)
+- [License](LICENSE)
+
+&nbsp;&nbsp;
+
+## Description
+
+Multi-cloud Infrastructure as Code with declarative modules and configuration files.
+
+&nbsp;&nbsp;
+
+## Installation
+
+### Gather BIG-IP configuration / stats
+```shell
+docker run -it --rm -v /path/to/local/folder:/home/user/ artioml/f5-app-sec gather_stats
+```
+
+### Run the actual Audit app
+```shell
+docker run -dit --rm -p 443:8443 artioml/f5-app-sec
+```
 
 
 Just a list of items / tasks for now:  
@@ -54,7 +77,3 @@ https://clouddocs.f5.com/training/community/waf/html/class6/class6.html
 - [ ] Super-NetOps (Class3?)
 
 &nbsp;&nbsp;
-
-```
-docker run -dit --rm -p 443:8443 artioml/f5-app-sec
-```
