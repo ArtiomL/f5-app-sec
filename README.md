@@ -19,7 +19,12 @@
 
 ## Description
 
-Multi-cloud Infrastructure as Code with declarative modules and configuration files.
+Selecting, implementing, and using a Web Application Firewall (WAF) are not easy tasks.  
+You must assess your security needs, the protection offered by various WAFs, and the ongoing administrative effort that some WAF features require.  
+A security policy must ensure all genuine users have access to the application and the right data while prohibiting access to unauthorized users and malicious activity. While it sounds simple, security policies provide a deep selection of security features, some of which require complex configuration, monitoring, and adjustment.  
+Often, there is also a delicate balance between implementing the **appropriate** level of security based on an application’s exposure to threat (sensitivity) and the possible aftereffect of disrupting its performance and users’ access.
+
+The container in this repository is a collection of policies, guides, scripts and audit tools to help you succeed with application security and F5 Advanced WAF (AWAF).
 
 &nbsp;&nbsp;
 
