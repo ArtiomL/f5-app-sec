@@ -11,14 +11,46 @@
 
 ## Table of Contents
 - [Description](#description)
+- [Installation](#installation)
+	- [Stats](#stats)
+	- [Run](#run)
+- [License](LICENSE)
 
+&nbsp;&nbsp;
 
-Just a list of items / tasks for now:  
+## Description
 
-Based on the following article:  
+The [container](https://hub.docker.com/r/artioml/f5-app-sec/) in this repository is a collection of policies, guides, scripts and audit tools to help you succeed with application security.
+
+Based on the following article:
 https://support.f5.com/csp/article/K07359270
 
 <p align="center"><img src="img/diagram.png"></p>
+
+
+&nbsp;&nbsp;
+
+## Installation
+
+### Stats
+To gather the configuration and stats from an F5 BIG-IP (which you have management access to), run:
+
+```shell
+docker run -it --rm -v /path/to/local/folder:/home/user/ artioml/f5-app-sec gather_stats
+```
+
+This will create a file named BIG-Stats.zip in the local directory you mounted into the container (`/path/to/local/folder`).
+
+
+### Run
+To start the actual web app, run:
+
+```shell
+docker run -dit --rm -p 443:8443 artioml/f5-app-sec
+```
+
+
+
 
 
 Good WAF Security, Getting started with ASM:  
@@ -54,7 +86,3 @@ https://clouddocs.f5.com/training/community/waf/html/class6/class6.html
 - [ ] Super-NetOps (Class3?)
 
 &nbsp;&nbsp;
-
-```
-docker run -dit --rm -p 443:8443 artioml/f5-app-sec
-```
